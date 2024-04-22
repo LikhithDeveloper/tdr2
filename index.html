@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+        .navbar-nav .nav-link:hover {
+            color: black !important;
+        }
+        .scroll{
+            font-style: italic;
+            background-color: rgb(20, 195, 20);
+            font-size: 15px;
+        }
+        .navbar{
+            box-shadow: 0px -2px 10px black;
+        }
+        .navbar-brand{
+            font-family: "Teko", sans-serif;
+            font-size: 20px;
+            padding-left: 0px;
+        }
+        .nav-link{
+            font-family: "Teko", sans-serif;
+            font-size: 20px;
+        }
+        
+        .img {
+            width: 40px; /* Set the width to your desired value */
+            height: 40px; /* Set the height to maintain a specific aspect ratio */
+        }
+        .container1{
+            padding: 20px;
+        }
+        .head1{
+            font-family: "Teko", sans-serif;
+            text-align: center;
+            text-shadow: 0px 0px 0px black;
+        }
+    
+        
+        .mattercon{
+            text-align: center;
+            font-family: "Teko", sans-serif;
+            font-size: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Start with opacity 0 */
+            }
+            to {
+                opacity: 1; /* End with opacity 1 */
+            }
+        }
+        
+        .me{
+            width: 13%;
+            height: 13%;
+        }
+        
+        .course{
+            text-align: center;
+            margin-top: 20%; 
+            font-family: "Teko", sans-serif;
+        }
+        .welcomepage{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(104, 104, 226);
+        }
+        
+        .welcomepage {
+        height: 600px;
+        position: relative; /* Ensure absolute positioning is relative to this div */
+        background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
+        background-size: cover;
+        background-position: center;
+        animation: slide 10s infinite;
+        display: flex;
+        justify-content: center;
+        }
+        @keyframes slide{
+            25%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/pngtree-scene-of-beautiful-sunshine-over-a-lake-in-a-high-mountain-image_2878541.jpg?updatedAt=1713621244148);
+                background-size: cover;
+            background-position: center;
+            }
+            65%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/view-spectacular-nature-landscape_23-2150763636.avif?updatedAt=1713621244114);
+                background-size: cover;
+            background-position: center;
+            }
+            100%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
+                background-size: cover;
+            background-position: center;
+            }
+        }
+        .innerwelp {
+            width: 250px;
+            height: 500px; /* Adjust height as needed */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .weltext{
+            text-align: center;
+            font-family: "Teko", sans-serif;
+            color: yellow;
+            animation: fadeIn2 2s ease forwards;
+            text-align: row;
+            
+        }
+        .weltext1{
+            font-size: 40px;
+            font-family: "Teko", sans-serif;
+            color: white;
+            animation: fadeIn2 2s ease forwards;
+            text-align: center;
+
+        }
+        @keyframes fadeIn2 {
+            from {
+                opacity: 0; /* Start with opacity 0 */
+            }
+            to {
+                opacity: 1; /* End with opacity 1 */
+            }
+        }
+        .innerwelp2{
+            background-color: white;
+            position: relative;
+            top: 500px;
+            height: 500px;
+            width: 330px;
+            align-items: center;
+            text-align: center;
+            border-radius: 7px;
+            box-shadow: 0px 0px 70px -40px black; 
+       } 
+        .outc{
+            width: 200px;
+            height: 100px;
+            background-color: white;
+            position: relative;
+            top: 500px;
+        }
+        .a{
+            width: auto;
+            height: 166.6px;
+            background-color: white;
+            text-align: center;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            color: rgb(37, 37, 207);
+            animation: fadeIn2 2s ease forwards;
+            font-family: "Teko", sans-serif;
+
+        }
+        .a:hover{
+            background-color: rgb(244, 234, 234);
+        }
+        
+        /*RESPONSIVENESS*/
+        @media screen and (min-width: 601px) and (max-width: 1800px) {
+            .navbar-brand{
+                font-family: "Teko", sans-serif;
+                font-size: 30px;
+                padding-left: 0px;
+            }   
+        }
+        @media screen and (min-width: 601px) and (max-width: 1024px) {
+        
+            .welcomepage {
+        height: 600px;
+        position: relative; /* Ensure absolute positioning is relative to this div */
+        background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
+        background-size: cover;
+        background-position: center;
+        animation: slide 10s infinite;
+        }
+        @keyframes slide{
+            25%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/pngtree-scene-of-beautiful-sunshine-over-a-lake-in-a-high-mountain-image_2878541.jpg?updatedAt=1713621244148);
+                background-size: cover;
+            background-position: center;
+            }
+            65%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/view-spectacular-nature-landscape_23-2150763636.avif?updatedAt=1713621244114);
+                background-size: cover;
+            background-position: center;
+            }
+            100%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
+                background-size: cover;
+            background-position: center;
+            }
+        }
+        .innerwelp {
+            width: 500px;
+            height: 500px; /* Adjust height as needed */
+            
+            position: absolute;
+            left: 150px; /* Adjust left position as needed */
+            top: 50%; /* Position vertically in the middle */
+            transform: translateY(-50%); /* Center vertically */
+            text-align: center;
+            padding-left: 120px;
+        }
+        .weltext{
+            padding-top: 130px;
+            font-family: "Teko", sans-serif;
+            color: yellow;
+            animation: fadeIn2 2s ease forwards;
+
+        }
+        .weltext1{
+            font-size: 60px;
+            font-family: "Teko", sans-serif;
+            color: white;
+            animation: fadeIn2 2s ease forwards;
+
+        }
+        @keyframes fadeIn2 {
+            from {
+                opacity: 0; /* Start with opacity 0 */
+            }
+            to {
+                opacity: 12; /* End with opacity 1 */
+            }
+        }
+        .innerwelp2{
+            border-radius: 10px;
+            background-color: white;
+            margin-top: 70vh;
+            width: 100vh;
+            height: 190px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 70px;
+            box-shadow: 0px 0px 100px -25px ;
+        }
+        .a{
+            width: 50%;
+            height: 190px;
+            background-color: white;
+            text-align: center;
+            border-radius: 7px;
+            transition: background-color 0.3s;
+            animation: fadeIn2 2s ease forwards;
+        }
+        .a:hover{
+            background-color: rgb(244, 234, 234);
+        }
+         
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1800px) {
+            .welcomepage {
+        display: flex;
+        height: 670px;
+        position: relative; /* Ensure absolute positioning is relative to this div */
+        background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
+        background-size: cover;
+        background-position: center;
+        animation: slide 10s infinite;
+        /* border-radius: top,right,bottom,left; */
+        
+        justify-content: center;
+        }
+        @keyframes slide{
+            25%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/pngtree-scene-of-beautiful-sunshine-over-a-lake-in-a-high-mountain-image_2878541.jpg?updatedAt=1713621244148);
+                background-size: cover;
+            background-position: center;
+            }
+            65%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/view-spectacular-nature-landscape_23-2150763636.avif?updatedAt=1713621244114);
+                background-size: cover;
+            background-position: center;
+            }
+            100%{
+                background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
+                background-size: cover;
+            background-position: center;
+            }
+        }
+        .innerwelp {
+            width: 500px;
+            height: 600px; /* Adjust height as needed */
+            
+            position: absolute;
+            left: 180px; /* Adjust left position as needed */
+            top: 50%; /* Position vertically in the middle */
+            transform: translateY(-50%); /* Center vertically */
+            text-align: center;
+            padding-left: 120px;
+        }
+        .weltext{
+            padding-top: 130px;
+            font-family: "Teko", sans-serif;
+            color: yellow;
+            animation: fadeIn2 2s ease forwards;
+
+        }
+        .weltext1{
+            font-size: 60px;
+            font-family: "Teko", sans-serif;
+            color: white;
+            animation: fadeIn2 2s ease forwards;
+
+        }
+        @keyframes fadeIn2 {
+            from {
+                opacity: 0; /* Start with opacity 0 */
+            }
+            to {
+                opacity: 12; /* End with opacity 1 */
+            }
+        }
+        .innerwelp2{
+            border-radius: 7px;
+            background-color: white;
+            margin-top: 70vh;
+            width: 130vh;
+            height: 190px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 110px;
+            box-shadow: 0px 0px 100px -25px ;
+        }
+        .a{
+            width: 43.3vh;
+            height: 190px;
+            background-color: white;
+            text-align: center;
+            border-radius: 7px;
+            transition: background-color 0.3s;
+            animation: fadeIn2 2s ease forwards;
+        }
+        .a:hover{
+            background-color: rgb(244, 234, 234);
+        }
+        
+        }
+
+    </style>
+</head>
+<body>
+  <nav class="navbar bg-primary navbar-expand-lg text-white">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#"><img class="img" src="https://ik.imagekit.io/zk7tfeeru/logo1.png-removebg-preview.png?updatedAt=1703492618039"><b>TDR COACHING CENTER</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-white" href="#" >Exams</a>
+                <a class="nav-link active text-white" href="#">Portal</a>
+                <a class="nav-link active text-white" href="#" >Apply</a>           
+            </div>
+            <button type="button" class="btn btn-light">Login</button>
+        </div>
+    </div>
+</nav>
+
+<div class="scroll">
+    <marquee  direction="">Welcome To Dharama Raju's <b>TDR COACHING CENTER</b> Academy of Competative Foundation , B.S colony ,Sompeta, Srikakulam, AndhraPradesh</marquee>
+</div>
+<div class="welcomepage">
+    <div class="innerwelp">
+        <h3 class="weltext">Welcome to TDR</h3>
+        <br>
+        <h1 class="weltext1">Top Coaching Center in Sompeta</h1>
+    </div>
+    <div class="innerwelp2">
+        <div class="a">
+            <h3 style="padding: 15px;color: blue;">Top Faculties</h3>
+            <p style="color: rgb(209, 61, 61); padding: 5px; font-size: 20px;">Exceptional educators driving success, knowledge, and growth at our distinguished institution.</p>
+        </div>
+        <div class="a">
+            <h3 style="padding: 15px;color: blue;">Top Faculties</h3>
+            <p style="color: rgb(209, 61, 61); padding: 5px;font-size: 20px;">Exceptional educators driving success, knowledge, and growth at our distinguished institution.</p>
+        </div>
+        <div class="a">
+            <h3 style="padding: 15px;color: blue;">Top Faculties</h3>
+            <p style="color: rgb(209, 61, 61); padding: 5px; font-size: 20px;">Exceptional educators driving success, knowledge, and growth at our distinguished institution.</p>    
+        </div>
+    </div>
+    
+</div>
+
+
+<br>
+<div class="outc" style="width: 200px; height: 200px; background-color: white;"></div>
+
+<br>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
