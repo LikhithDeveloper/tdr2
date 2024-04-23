@@ -9,16 +9,23 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
         .navbar-nav .nav-link:hover {
-            color: black !important;
+            color: rgb(30, 189, 30) !important;
         }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Adjust z-index as needed */
+            box-shadow: 0px -2px 10px black; /* Optional: Add shadow for a raised effect */
+        }
+
         .scroll{
             font-style: italic;
-            background-color: rgb(20, 195, 20);
+            background-color: white;
             font-size: 15px;
+            margin-top: 50px;
         }
-        .navbar{
-            box-shadow: 0px -2px 10px black;
-        }
+
         .navbar-brand{
             font-family: "Teko", sans-serif;
             font-size: 20px;
@@ -28,7 +35,6 @@
             font-family: "Teko", sans-serif;
             font-size: 20px;
         }
-        
         .img {
             width: 40px; /* Set the width to your desired value */
             height: 40px; /* Set the height to maintain a specific aspect ratio */
@@ -42,12 +48,6 @@
             text-shadow: 0px 0px 0px black;
         }
     
-        
-        .mattercon{
-            text-align: center;
-            font-family: "Teko", sans-serif;
-            font-size: 20px;
-        }
 
         @keyframes fadeIn {
             from {
@@ -144,7 +144,7 @@
             position: relative;
             top: 500px;
             height: 500px;
-            width: 330px;
+            width: 260px;
             align-items: center;
             text-align: center;
             border-radius: 7px;
@@ -172,6 +172,42 @@
         .a:hover{
             background-color: rgb(244, 234, 234);
         }
+        .about{
+            position: relative;
+            top: 400px; 
+            margin-left: 7vh;
+            height: 400px; 
+            width:260px;
+        }
+        .about2{
+            position: relative; 
+            left: -3%; 
+            top: 150px;
+        }
+        .about1{
+            height: 200px;
+            width: 240px;
+        }
+        .aboutimg1{
+            width: 150px; 
+            height: 200px; 
+            border-radius: 3px;
+        }
+        .aboutimg2{
+            width: 150px; 
+            height: 150px; 
+            border-radius: 3px; 
+            position: relative; 
+            top: -50px; 
+            left: 100px;
+        }
+        #demo{
+            width: 240px;
+        }
+        .about1-2{
+            width: 250px;
+        }
+
         
         /*RESPONSIVENESS*/
         @media screen and (min-width: 601px) and (max-width: 1800px) {
@@ -271,14 +307,13 @@
         @media screen and (min-width: 1024px) and (max-width: 1800px) {
             .welcomepage {
         display: flex;
-        height: 670px;
+        height: 700px;
         position: relative; /* Ensure absolute positioning is relative to this div */
         background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
         background-size: cover;
         background-position: center;
         animation: slide 10s infinite;
         /* border-radius: top,right,bottom,left; */
-        
         justify-content: center;
         }
         @keyframes slide{
@@ -304,13 +339,12 @@
             
             position: absolute;
             left: 180px; /* Adjust left position as needed */
-            top: 50%; /* Position vertically in the middle */
+            top: 45%; /* Position vertically in the middle */
             transform: translateY(-50%); /* Center vertically */
             text-align: center;
             padding-left: 120px;
         }
         .weltext{
-            padding-top: 130px;
             font-family: "Teko", sans-serif;
             color: yellow;
             animation: fadeIn2 2s ease forwards;
@@ -335,17 +369,19 @@
             border-radius: 7px;
             background-color: white;
             margin-top: 70vh;
-            width: 130vh;
-            height: 190px;
+            width: 160vh;
+            height: 210px;
             display: flex;
             justify-content: center;
             position: relative;
-            top: 110px;
+            top: 130px;
             box-shadow: 0px 0px 100px -25px ;
+            animation: fadeIn2 0s ease forwards;
+
         }
         .a{
-            width: 43.3vh;
-            height: 190px;
+            width: 53.3vh;
+            height: 210px;
             background-color: white;
             text-align: center;
             border-radius: 7px;
@@ -355,30 +391,52 @@
         .a:hover{
             background-color: rgb(244, 234, 234);
         }
+        #demo{
+            transition: opacity 0.3s ease
+        }
+        .about{
+            position: relative;
+            top: 200px; 
+            margin-left: 25vh;
+            height: 400px; 
+            width:1250px;
+        }
+        .about2{
+            position: relative; left: 110%; top: -300px;
+        }
+        .about1{
+            height: 200px;
+        }
+        .aboutimg1{
+            width: 200px; height: 300px; border-radius: 3px;
+        }
+        .aboutimg2{
+            width: 200px; height: 200px; border-radius: 3px; position: relative; top: 120px; right: 30px;
+        }
         
         }
 
     </style>
 </head>
 <body>
-  <nav class="navbar bg-primary navbar-expand-lg text-white">
+  <nav class="navbar bg-light navbar-expand-lg text-white ">
     <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#"><img class="img" src="https://ik.imagekit.io/zk7tfeeru/logo1.png-removebg-preview.png?updatedAt=1703492618039"><b>TDR COACHING CENTER</b></a>
+        <a class="navbar-brand text-dark" href="#"><img class="img" src="https://ik.imagekit.io/zk7tfeeru/logo1.png-removebg-preview.png?updatedAt=1703492618039"><b>TDR COACHING CENTER</b></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-                <a class="nav-link active text-white" href="#" >Exams</a>
-                <a class="nav-link active text-white" href="#">Portal</a>
-                <a class="nav-link active text-white" href="#" >Apply</a>           
+                <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-dark" href="#">Exams</a>
+                <a class="nav-link active text-dark" href="#">Portal</a>
+                <a class="nav-link active text-dark" href="#">Apply</a>           
             </div>
-            <button type="button" class="btn btn-light">Login</button>
+            <button type="button" class="btn btn-dark">Login</button>
         </div>
     </div>
 </nav>
-
+<br>
 <div class="scroll">
     <marquee  direction="">Welcome To Dharama Raju's <b>TDR COACHING CENTER</b> Academy of Competative Foundation , B.S colony ,Sompeta, Srikakulam, AndhraPradesh</marquee>
 </div>
@@ -404,13 +462,33 @@
     </div>
     
 </div>
-
-
 <br>
-<div class="outc" style="width: 200px; height: 200px; background-color: white;"></div>
-
 <br>
-
+<div class="about">
+    <div class="about1-1" style="width: 50%;">
+        <div class="about1-2">
+            <h6 class="abt-head1">About us</h6>
+            <h2 class="abt-head">We Provide Best Quality</h2>
+            <h2 class="abt-head">Education For You</h2>
+        </div>
+        <br>
+        <br>
+        <div class="about1">
+            <span>
+                <button style="border: none;background: none; text-decoration: none; color: black;" type="button" onclick="document.getElementById('demo').innerHTML='Sri Aditya Educational Society (ESTD-2000) started a Technical Institution to impart highest quality and standards in the north coastal A.P. under aegis of eminent academicians, educationists and professionals in the name of Aditya Institute of Technology and Management in 2001.'">About TDR  |  </button>
+                <button style="border: none;background: none; text-decoration: none; color: black;" type="button" onclick="document.getElementById('demo').innerHTML='To evolve into a premier engineering institute in the country by continuously enhancing the range of our competencies, expanding the gamut of our activities and extending the frontiers of our operations.'">Our Mission  |</button>
+                <button style="border: none;background: none; text-decoration: none; color: black;" type="button" onclick="document.getElementById('demo').innerHTML='Synergizing knowledge, technology and human resource, we impart the best quality education in Technology and Management. In the process, we make education more objective so that the efficiency for employability increases on a continued basis.'">Our Vission  </button>
+            </span>
+            <br>
+            <br>
+            <p id="demo" style="transition: opacity 0.3s ease;">Sri Aditya Educational Society (ESTD-2000) started a Technical Institution to impart highest quality and standards in the north coastal A.P. under aegis of eminent academicians, educationists and professionals in the name of Aditya Institute of Technology and Management in 2001</p>
+        </div>
+        <div class="about2">
+            <img class="aboutimg1" src="https://ik.imagekit.io/zk7tfeeru/WhatsApp%20Image%202024-01-10%20at%2011.15.33_e3c7615b.jpg?updatedAt=1704865715148">
+            <img class="aboutimg2" src="https://ik.imagekit.io/zk7tfeeru/Mahesh%20Babu.webp?updatedAt=1713801743528">
+        </div>
+    </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
