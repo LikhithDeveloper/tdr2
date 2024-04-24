@@ -57,7 +57,7 @@
                 opacity: 1; /* End with opacity 1 */
             }
         }
-        
+        @media screen and (min-width: 500px) and (max-width: 600px){
         .me{
             width: 13%;
             height: 13%;
@@ -143,8 +143,8 @@
             background-color: white;
             position: relative;
             top: 500px;
-            height: 500px;
-            width: 360px;
+            height: 550px;
+            width: 420px;
             align-items: center;
             text-align: center;
             border-radius: 7px;
@@ -159,7 +159,7 @@
         }
         .a{
             width: auto;
-            height: 166.6px;
+            height: 183.3px;
             background-color: white;
             text-align: center;
             border-radius: 4px;
@@ -174,39 +174,44 @@
         }
         .about{
             position: relative;
-            top: 400px; 
+            top: 480px; 
             margin-left: 7vh;
             height: 400px; 
             width:260px;
         }
         .about2{
             position: relative; 
-            left: 30%; 
-            top: 150px;
+            left: 45%; 
+            top: 40px;
         }
         .about1{
             height: 200px;
-            width: 240px;
+            width: 400px;
         }
         .aboutimg1{
-            width: 150px; 
-            height: 200px; 
+            width: 200px; 
+            height: 250px; 
             border-radius: 3px;
         }
         .aboutimg2{
-            width: 150px; 
-            height: 150px; 
+            width: 200px; 
+            height: 200px; 
             border-radius: 3px; 
             position: relative; 
             top: -50px; 
             left: 100px;
         }
         #demo{
-            width: 240px;
+            width: 400px;
+            position: relative;
+            left: 5px;
+            transition: opacity 0.3s ease;
         }
         .about1-2{
-            width: 250px;
+            width: 300px;
         }
+
+    }
 
         
         /*RESPONSIVENESS*/
@@ -217,9 +222,9 @@
                 padding-left: 0px;
             }   
         }
-        @media screen and (min-width: 601px) and (max-width: 1024px) {
+        @media screen and (min-width: 601px) and (max-width: 1450px) {
         
-            .welcomepage {
+        .welcomepage {
         height: 600px;
         position: relative; /* Ensure absolute positioning is relative to this div */
         background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
@@ -301,10 +306,49 @@
         .a:hover{
             background-color: rgb(244, 234, 234);
         }
+        /*#demo{
+            transition: opacity 0.3s ease;
+            width: 500px;
+        }
+        .about{
+            position: relative;
+            top: 200px; 
+            margin-left: 30vh;
+            height: 400px; 
+            width:1250px;
+        }
+        .about2{
+            position: relative; 
+            left: 100%; 
+            top: -350px;
+        }
+        .about1{
+            height: 200px;
+            width: 500px;
+        }
+        .aboutimg1{
+            width: 200px; height: 300px; border-radius: 3px;
+        }
+        .aboutimg2{
+            width: 200px; height: 200px; border-radius: 3px; position: relative; top: 120px; left: -20px;
+        }
+        .about1-2{
+            width: 1250px;
+        }
+        .about1-1{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            left: 40px;
+        }
+        #demo{
+            position: relative;
+            left: 5px;
+        }*/
          
         }
 
-        @media screen and (min-width: 1024px) and (max-width: 1800px) {
+        @media screen and (min-width: 1450px) and (max-width: 1600px) {
             .welcomepage {
         display: flex;
         height: 700px;
@@ -313,7 +357,7 @@
         background-size: cover;
         background-position: center;
         animation: slide 10s infinite;
-        /* border-radius: top,right,bottom,left; */
+        
         justify-content: center;
         }
         @keyframes slide{
@@ -339,7 +383,7 @@
             
             position: absolute;
             left: 180px; /* Adjust left position as needed */
-            top: 45%; /* Position vertically in the middle */
+            top: 75%; /* Position vertically in the middle */
             transform: translateY(-50%); /* Center vertically */
             text-align: center;
             padding-left: 120px;
@@ -404,8 +448,8 @@
         }
         .about2{
             position: relative; 
-            left: 110%; 
-            top: -300px;
+            left: 100%; 
+            top: -350px;
         }
         .about1{
             height: 200px;
@@ -419,6 +463,16 @@
         }
         .about1-2{
             width: 1250px;
+        }
+        .about1-1{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            left: 40px;
+        }
+        #demo{
+            position: relative;
+            left: 5px;
         }
         
         }
@@ -479,16 +533,15 @@
             <h2 class="abt-head">Education For You</h2>
         </div>
         <br>
-        <br>
         <div class="about1">
             <span>
-                <button style="border: none;background: none; text-decoration: none; color: black;" type="button" onclick="document.getElementById('demo').innerHTML='Sri Aditya Educational Society (ESTD-2000) started a Technical Institution to impart highest quality and standards in the north coastal A.P. under aegis of eminent academicians, educationists and professionals in the name of Aditya Institute of Technology and Management in 2001.'">About TDR  |  </button>
-                <button style="border: none;background: none; text-decoration: none; color: black;" type="button" onclick="document.getElementById('demo').innerHTML='To evolve into a premier engineering institute in the country by continuously enhancing the range of our competencies, expanding the gamut of our activities and extending the frontiers of our operations.'">Our Mission  |</button>
-                <button style="border: none;background: none; text-decoration: none; color: black;" type="button" onclick="document.getElementById('demo').innerHTML='Synergizing knowledge, technology and human resource, we impart the best quality education in Technology and Management. In the process, we make education more objective so that the efficiency for employability increases on a continued basis.'">Our Vission  </button>
+                <button style="border: none;background: none; text-decoration: none; color: black; cursor: pointer;" type="button" onclick="changeContent('Sri TDR Educational Society (ESTD-2019) started a Technical Institution to impart highest quality and standards in the Sompeta A.P. under aegis of eminent academicians, educationists and professionals in the name of Telli Dharama Rajus Coaching Center in 2019')">About TDR |</button>
+                <button style="border: none;background: none; text-decoration: none; color: black; cursor: pointer;" type="button" onclick="changeContent('To evolve into a premier engineering institute in the country by continuously enhancing the range of our competencies, expanding the gamut of our activities and extending the frontiers of our operations.')">Our Mission |</button>
+                <button style="border: none;background: none; text-decoration: none; color: black; cursor: pointer;" type="button" onclick="changeContent('Synergizing knowledge, technology and human resource, we impart the best quality education in Technology and Management. In the process, we make education more objective so that the efficiency for employability increases on a continued basis.')">Our Vision</button>
             </span>
             <br>
             <br>
-            <p id="demo" style="transition: opacity 0.3s ease;">Sri Aditya Educational Society (ESTD-2000) started a Technical Institution to impart highest quality and standards in the north coastal A.P. under aegis of eminent academicians, educationists and professionals in the name of Aditya Institute of Technology and Management in 2001</p>
+            <p class="para" id="demo">Sri Aditya Educational Society (ESTD-2000) started a Technical Institution to impart highest quality and standards in the north coastal A.P. under aegis of eminent academicians, educationists and professionals in the name of Aditya Institute of Technology and Management in 2001</p>
         </div>
         <div class="about2">
             <img class="aboutimg1" src="https://ik.imagekit.io/zk7tfeeru/WhatsApp%20Image%202024-01-10%20at%2011.15.33_e3c7615b.jpg?updatedAt=1704865715148">
@@ -499,5 +552,16 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script>
+    function changeContent(content) {
+        var demo = document.getElementById('demo');
+        demo.style.opacity = '0'; // Fade out
+        setTimeout(function() {
+            demo.innerHTML = content; // Change content
+            demo.style.opacity = '1'; // Fade in
+        }, 500); // Wait for the fade-out transition (0.5s)
+    }
+</script>
+
 </body>
 </html>
