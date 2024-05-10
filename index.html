@@ -71,160 +71,8 @@
             }
         }
         /*RESPONSIVENESS*/
-        @media screen and (min-width: 290px) and (max-width: 800px){
-        
-        .welcomepage {
-            height: 600px;
-            position: relative; /* Ensure absolute positioning is relative to this div */
-            background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
-            background-size: cover;
-            background-position: center;
-            animation: slide 10s infinite;
-            display: flex;
-            justify-content: center;
-        }
-        @keyframes slide{
-            33%{
-                background: url(https://ik.imagekit.io/zk7tfeeru/pngtree-scene-of-beautiful-sunshine-over-a-lake-in-a-high-mountain-image_2878541.jpg?updatedAt=1713621244148);
-                background-size: cover;
-            background-position: center;
-            }
-            66%{
-                background: url(https://ik.imagekit.io/zk7tfeeru/view-spectacular-nature-landscape_23-2150763636.avif?updatedAt=1713621244114);
-                background-size: cover;
-            background-position: center;
-            }
-            100%{
-                background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
-                background-size: cover;
-            background-position: center;
-            }
-        }
-        .innerwelp {
-            width: 250px;
-            height: 500px; /* Adjust height as needed */
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            background-color: transparent;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+       
 
-        .weltext{
-            text-align: center;
-            font-family: "Teko", sans-serif;
-            color: yellow;
-            animation: fadeIn2 2s ease forwards;
-            text-align: row;
-            
-        }
-        .weltext1{
-            font-size: 40px;
-            font-family: "Teko", sans-serif;
-            color: white;
-            animation: fadeIn2 2s ease forwards;
-            text-align: center;
-
-        }
-        @keyframes fadeIn2 {
-            from {
-                opacity: 0; /* Start with opacity 0 */
-            }
-            to {
-                opacity: 1; /* End with opacity 1 */
-            }
-        }
-        .innerwelp2{
-            background-color: white;
-            position: relative;
-            top: 500px;
-            height: 550px;
-            width: 410px;
-            align-items: center;
-            text-align: center;
-            border-radius: 7px;
-            box-shadow: 0px 0px 70px -40px black; 
-       } 
-        .outc{
-            width: 200px;
-            height: 100px;
-            background-color: white;
-            position: relative;
-            top: 500px;
-        }
-        .a{
-            width: auto;
-            height: 183.3px;
-            background-color: white;
-            text-align: center;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-            color: rgb(37, 37, 207);
-            animation: fadeIn2 2s ease forwards;
-            font-family: "Teko", sans-serif;
-
-        }
-        .a:hover{
-            background-color: rgb(244, 234, 234);
-        }
-        .about{
-            position: relative;
-            top: 480px; 
-            margin: auto;
-            height: 900px; 
-            width:330px;
-            align-items: center;
-            
-        }
-        .about2{
-            position: relative; 
-            left: 20%; 
-            top: -10px;
-        }
-        .about1{
-            height: 300px;
-            width: 320px;
-        }
-        .aboutimg1{
-            width: 200px; 
-            height: 250px; 
-            border-radius: 3px;
-        }
-        .aboutimg2{
-            width: 200px; 
-            height: 200px; 
-            border-radius: 3px; 
-            position: relative; 
-            top: -50px; 
-            left: 100px;
-        }
-        #demo{
-            width: 320px;
-            height: 200px;
-            position: relative;
-            left: 5px;
-            transition: opacity 0.3s ease;
-        }
-        .about1-2{
-            width: 300px;
-        }
-
-        }
-         @media screen and (min-width: 400px) and (max-width: 1800px) {
-            .navbar-brand{
-                font-family: "Teko", sans-serif;
-                font-size: 30px;
-                padding-left: 0px;
-            }   
-        }
-
-
-        
-        @media screen and (min-width: 600px) and (max-width: 1000px) {
         .welcomepage {
             display: flex;
             height: 700px;
@@ -234,6 +82,7 @@
             background-position: center;
             animation: slide 10s infinite;
             justify-content: center;
+            align-items: center;
         }
         @keyframes slide{
             33%{
@@ -253,15 +102,14 @@
             }
         }
         .innerwelp {
-            width: 300px;
-            height: 400px; /* Adjust height as needed */
+            width: 500px;
+            height: 20vmax; /* Adjust height as needed */
             margin: auto;
             position: absolute;
            /* left: 180px; /* Adjust left position as needed */
-            top: 55%; /* Position vertically in the middle */
+            top: 50%; /* Position vertically in the middle */
             transform: translateY(-50%); /* Center vertically */
             text-align: center;
-
         }
         .weltext{
             font-family: "Teko", sans-serif;
@@ -285,496 +133,94 @@
             }
         }
         .innerwelp2{
-            border-radius: 7px;
+            border-radius: 5px;
             background-color: white;
-            margin-top: 68vh;
-            width: 80vh;
+            margin-top: 950px;
+            width: 98vw;
             height: 210px;
             display: flex;
             justify-content: center;
             position: relative;
-            top: 130px;
+            top: -100px;
             box-shadow: 0px 0px 100px -25px ;
             animation: fadeIn2 0s ease forwards;
-            overflow: hidden;
+            flex-wrap: wrap;
 
         }
         .a{
-            width: 53.3vh;
+            width: 33.3%;
             height: 210px;
             background-color: white;
             text-align: center;
-            border-radius: 7px;
+            border-radius: 5px;
             transition: background-color 0.3s;
             animation: fadeIn2 2s ease forwards;
             font-family: "Teko", sans-serif;
+
         }
         .a:hover{
             background-color: rgb(244, 234, 234);
         }
         #demo{
             transition: opacity 0.3s ease;
-            width: 500px;
-        }
-        .about{
-            position: relative;
-            top: 170px; 
-            margin: auto;
-            height: 800px; 
-            width:510px;
-            overflow: hidden;
-        }
-        .abt{
-            display: flex;
-            flex-direction: column;
-        }
-        .about2{
-            position: relative;
-            left: 28%;
-            top: 40px;
-            width: 420px;
-        }
-        .about1{
-            height: 200px;
-            width: 500px;
-        }
-        .aboutimg1{
-            width: 200px; height: 300px; border-radius: 3px;
-        }
-        .aboutimg2{
-            width: 200px; height: 200px; border-radius: 3px; position: relative; top: 100px; left: -50px;
-        }
-        .about1-2{
-            width: 1250px;
-        }
-        .about1-1{
-            width: 400px;
-            height: 400px;
-            position: relative;
-            left: 40px;
-        }
-        #demo{
-            position: relative;
-            left: 5px;
-        }
-        
-        }
-
-        @media screen and (min-width: 1000px) and (max-width: 1200px) {
-        .welcomepage {
-            display: flex;
-            height: 700px;
-            position: relative; /* Ensure absolute positioning is relative to this div */
-            background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
-            background-size: cover;
-            background-position: center;
-            animation: slide 10s infinite;
-            justify-content: center;
-        }
-        @keyframes slide{
-            33%{
-                background: url(https://ik.imagekit.io/zk7tfeeru/pngtree-scene-of-beautiful-sunshine-over-a-lake-in-a-high-mountain-image_2878541.jpg?updatedAt=1713621244148);
-                background-size: cover;
-                background-position: center;
-            }
-            66%{
-                background: url(https://ik.imagekit.io/zk7tfeeru/view-spectacular-nature-landscape_23-2150763636.avif?updatedAt=1713621244114);
-                background-size: cover;
-            background-position: center;
-            }
-            100%{
-                background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
-                background-size: cover;
-            background-position: center;
-            }
-        }
-        .innerwelp {
-            width: 300px;
-            height: 400px; /* Adjust height as needed */
-            margin: auto;
-            position: absolute;
-           /* left: 180px; /* Adjust left position as needed */
-            top: 55%; /* Position vertically in the middle */
-            transform: translateY(-50%); /* Center vertically */
-            text-align: center;
-
-        }
-        .weltext{
-            font-family: "Teko", sans-serif;
-            color: yellow;
-            animation: fadeIn2 2s ease forwards;
-
-        }
-        .weltext1{
-            font-size: 60px;
-            font-family: "Teko", sans-serif;
-            color: white;
-            animation: fadeIn2 2s ease forwards;
-
-        }
-        @keyframes fadeIn2 {
-            from {
-                opacity: 0; /* Start with opacity 0 */
-            }
-            to {
-                opacity: 12; /* End with opacity 1 */
-            }
-        }
-        .innerwelp2{
-            border-radius: 7px;
-            background-color: white;
-            margin-top: 68vh;
-            width: 130vh;
-            height: 210px;
-            display: flex;
-            justify-content: center;
-            position: relative;
-            top: 130px;
-            box-shadow: 0px 0px 100px -25px ;
-            animation: fadeIn2 0s ease forwards;
-            overflow: hidden;
-
-        }
-        .a{
-            width: 53.3vh;
-            height: 210px;
-            background-color: white;
-            text-align: center;
-            border-radius: 7px;
-            transition: background-color 0.3s;
-            animation: fadeIn2 2s ease forwards;
-            font-family: "Teko", sans-serif;
-        }
-        .a:hover{
-            background-color: rgb(244, 234, 234);
-        }
-        #demo{
-            transition: opacity 0.3s ease;
-            width: 500px;
-        }
-        .about{
-            position: relative;
-            top: 170px; 
-            margin: auto;
-            height: 600px; 
-            width: 1000px;
-        }
-        .abt{
-            display: flex;
-            flex-direction: row;
-        }
-        .about2{
-            position: relative;
-            left: 18%;
-            top: -140px;
-            width: 420px;
-        }
-        .about1{
-            height: 200px;
-            width: 500px;
-        }
-        .aboutimg1{
-            width: 200px; height: 300px; border-radius: 3px;
-        }
-        .aboutimg2{
-            width: 200px; height: 200px; border-radius: 3px; position: relative; top: -100px; left: 130px;
-        }
-        .about1-2{
             width: 100%;
-        }
-        .about1-1{
-            width: 400px;
-            height: 400px;
-            position: relative;
-            left: 40px;
-        }
-        #demo{
-            position: relative;
-            left: 5px;
-        }
-        
-        }
-
-        @media screen and (min-width:1200px) and (max-width: 1400px){
-        .welcomepage {
-            display: flex;
-            height: 700px;
-            position: relative; /* Ensure absolute positioning is relative to this div */
-            background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
-            background-size: cover;
-            background-position: center;
-            animation: slide 10s infinite;
-            justify-content: center;
-        }
-        @keyframes slide{
-            33%{
-                background: url(https://ik.imagekit.io/zk7tfeeru/pngtree-scene-of-beautiful-sunshine-over-a-lake-in-a-high-mountain-image_2878541.jpg?updatedAt=1713621244148);
-                background-size: cover;
-                background-position: center;
-            }
-            66%{
-                background: url(https://ik.imagekit.io/zk7tfeeru/view-spectacular-nature-landscape_23-2150763636.avif?updatedAt=1713621244114);
-                background-size: cover;
-            background-position: center;
-            }
-            100%{
-                background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
-                background-size: cover;
-            background-position: center;
-            }
-        }
-        .innerwelp {
-            width: 300px;
-            height: 400px; /* Adjust height as needed */
-            margin: auto;
-            position: absolute;
-           /* left: 180px; /* Adjust left position as needed */
-            top: 55%; /* Position vertically in the middle */
-            transform: translateY(-50%); /* Center vertically */
-            text-align: center;
-
-        }
-        .weltext{
-            font-family: "Teko", sans-serif;
-            color: yellow;
-            animation: fadeIn2 2s ease forwards;
-
-        }
-        .weltext1{
-            font-size: 60px;
-            font-family: "Teko", sans-serif;
-            color: white;
-            animation: fadeIn2 2s ease forwards;
-
-        }
-        @keyframes fadeIn2 {
-            from {
-                opacity: 0; /* Start with opacity 0 */
-            }
-            to {
-                opacity: 12; /* End with opacity 1 */
-            }
-        }
-        .innerwelp2{
-            border-radius: 7px;
-            background-color: white;
-            margin-top: 68vh;
-            width: 160vh;
-            height: 210px;
-            display: flex;
-            justify-content: center;
-            position: relative;
-            top: 130px;
-            box-shadow: 0px 0px 100px -25px ;
-            animation: fadeIn2 0s ease forwards;
-            overflow: hidden;
-
-        }
-        .a{
-            width: 53.3vh;
-            height: 210px;
-            background-color: white;
-            text-align: center;
-            border-radius: 7px;
-            transition: background-color 0.3s;
-            animation: fadeIn2 2s ease forwards;
-            font-family: "Teko", sans-serif;
-        }
-        .a:hover{
-            background-color: rgb(244, 234, 234);
-        }
-        #demo{
-            transition: opacity 0.3s ease;
-            width: 500px;
-        }
-        .about{
-            position: relative;
-            top: 170px; 
-            margin: auto;
-            height: 600px; 
-            width: 1000px;
-        }
-        .abt{
-            display: flex;
-            flex-direction: row;
-        }
-        .about2{
-            position: relative;
-            left: 18%;
-            top: -140px;
-            width: 420px;
-        }
-        .about1{
-            height: 200px;
-            width: 500px;
-        }
-        .aboutimg1{
-            width: 200px; height: 300px; border-radius: 3px;
-        }
-        .aboutimg2{
-            width: 200px; height: 200px; border-radius: 3px; position: relative; top: -100px; left: 130px;
-        }
-        .about1-2{
-            width: 100%;
-        }
-        .about1-1{
-            width: 400px;
-            height: 400px;
-            position: relative;
-            left: 40px;
-        }
-        #demo{
-            position: relative;
-            left: 5px;
-        }
-        
-        }
-
-        @media screen and (min-width: 1400px) and (max-width: 1600px) {
-        .welcomepage {
-            display: flex;
-            height: 700px;
-            position: relative; /* Ensure absolute positioning is relative to this div */
-            background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
-            background-size: cover;
-            background-position: center;
-            animation: slide 10s infinite;
-            justify-content: center;
-        }
-        @keyframes slide{
-            33%{
-                background: url(https://ik.imagekit.io/zk7tfeeru/pngtree-scene-of-beautiful-sunshine-over-a-lake-in-a-high-mountain-image_2878541.jpg?updatedAt=1713621244148);
-                background-size: cover;
-                background-position: center;
-            }
-            66%{
-                background: url(https://ik.imagekit.io/zk7tfeeru/view-spectacular-nature-landscape_23-2150763636.avif?updatedAt=1713621244114);
-                background-size: cover;
-            background-position: center;
-            }
-            100%{
-                background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
-                background-size: cover;
-            background-position: center;
-            }
-        }
-        .innerwelp {
-            width: 500px;
-            height: 600px; /* Adjust height as needed */
-            margin: auto;
-            position: absolute;
-           /* left: 180px; /* Adjust left position as needed */
-            top: 75%; /* Position vertically in the middle */
-            transform: translateY(-50%); /* Center vertically */
-            text-align: center;
-
-        }
-        .weltext{
-            font-family: "Teko", sans-serif;
-            color: yellow;
-            animation: fadeIn2 2s ease forwards;
-
-        }
-        .weltext1{
-            font-size: 60px;
-            font-family: "Teko", sans-serif;
-            color: white;
-            animation: fadeIn2 2s ease forwards;
-
-        }
-        @keyframes fadeIn2 {
-            from {
-                opacity: 0; /* Start with opacity 0 */
-            }
-            to {
-                opacity: 12; /* End with opacity 1 */
-            }
-        }
-        .innerwelp2{
-            border-radius: 7px;
-            background-color: white;
-            margin-top: 70vh;
-            width: 160vh;
-            height: 210px;
-            display: flex;
-            justify-content: center;
-            position: relative;
-            top: 130px;
-            box-shadow: 0px 0px 100px -25px ;
-            animation: fadeIn2 0s ease forwards;
-
-        }
-        .a{
-            width: 53.3vh;
-            height: 210px;
-            background-color: white;
-            text-align: center;
-            border-radius: 7px;
-            transition: background-color 0.3s;
-            animation: fadeIn2 2s ease forwards;
-            font-family: "Teko", sans-serif;
-        }
-        .a:hover{
-            background-color: rgb(244, 234, 234);
-        }
-        #demo{
-            transition: opacity 0.3s ease;
-            width: 500px;
-        }
-        .about{
-            position: relative;
-            top: 200px; 
-            margin-left: 30vh;
-            height: 400px; 
-            width:1000px;
-            overflow: hidden;
         }
         .abt{
             display: flex;
             align-items: row;
         }
         .about2{
-            position: relative;
-            left: 28%;
-            top: -130px;
-            width: 500px;
+            width: 40%;
+            height: 100%;
+            justify-content: center;
+            
         }
         .about1{
             height: 200px;
             width: 500px;
         }
         .aboutimg1{
-            width: 200px; height: 300px; border-radius: 3px;
-        }
-        .aboutimg2{
-            width: 200px; height: 200px; border-radius: 3px; position: relative; top: -100px; left: 150px;
+            width: 250px; 
+            height: 320px; 
+            border-radius: 3px;
+            position: relative;
+            left: 20%;
+            box-shadow: 0px 0px 100px -25px ;
         }
         .about1-2{
-            width: 1250px;
+            width: 60%;
+            height: 100%;
+            padding-left: 8vw;
         }
         .about1-1{
-            width: 400px;
-            height: 400px;
+            width: 100%;
+            height: 28vmax;
             position: relative;
-            left: 40px;
+            top: 15vw;
+            /*left: 5%;*/
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            
         }
         #demo{
             position: relative;
             left: 5px;
         }
-        
-        }
-
-        @media screen and (min-width: 800px) and (max-width: 900px) and (min-height:250px) and (max-height:300px){
+        /* # RESPONSIVENESS*/
+        @media screen and (max-width: 1024px) {
             .welcomepage {
             display: flex;
-            height: 400px;
+            height: 700px;
             position: relative; /* Ensure absolute positioning is relative to this div */
             background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
             background-size: cover;
             background-position: center;
             animation: slide 10s infinite;
             justify-content: center;
+            align-items: center;
         }
         @keyframes slide{
             33%{
@@ -794,15 +240,14 @@
             }
         }
         .innerwelp {
-            width: 300px;
-            height: 400px; /* Adjust height as needed */
+            width: 500px;
+            height: 20vmax; /* Adjust height as needed */
             margin: auto;
             position: absolute;
            /* left: 180px; /* Adjust left position as needed */
-            top: 55%; /* Position vertically in the middle */
+            top: 50%; /* Position vertically in the middle */
             transform: translateY(-50%); /* Center vertically */
             text-align: center;
-
         }
         .weltext{
             font-family: "Teko", sans-serif;
@@ -826,73 +271,78 @@
             }
         }
         .innerwelp2{
-            border-radius: 7px;
+            border-radius: 5px;
             background-color: white;
-            margin-top: 68vh;
-            width: 230vh;
-            height: 200px;
+            margin-top: 950px;
+            width: 98vw;
+            height: 210px;
             display: flex;
             justify-content: center;
             position: relative;
-            top: 140px;
+            top: -100px;
             box-shadow: 0px 0px 100px -25px ;
             animation: fadeIn2 0s ease forwards;
-            overflow: hidden;
+            flex-wrap: wrap;
 
         }
         .a{
-            width: auto;
+            width: 33.3%;
             height: 210px;
             background-color: white;
             text-align: center;
-            border-radius: 7px;
+            border-radius: 5px;
             transition: background-color 0.3s;
             animation: fadeIn2 2s ease forwards;
             font-family: "Teko", sans-serif;
+
         }
         .a:hover{
             background-color: rgb(244, 234, 234);
         }
         #demo{
             transition: opacity 0.3s ease;
-            width: 500px;
-        }
-        .about{
-            position: relative;
-            top: 170px; 
-            margin: auto;
-            height: 800px; 
-            width:510px;
-            overflow: hidden;
+            width: 100%;
         }
         .abt{
             display: flex;
-            flex-direction: column;
+            align-items: row;
         }
         .about2{
-            position: relative;
-            left: 28%;
-            top: 40px;
-            width: 420px;
+            width: 50%;
+            height: 100%;
+            justify-content: center;
+            
         }
         .about1{
             height: 200px;
             width: 500px;
         }
         .aboutimg1{
-            width: 200px; height: 300px; border-radius: 3px;
-        }
-        .aboutimg2{
-            width: 200px; height: 200px; border-radius: 3px; position: relative; top: 100px; left: -50px;
+            width: 250px; 
+            height: 320px; 
+            border-radius: 3px;
+            position: relative;
+            top: 50px;
+            left: 20%;
+            box-shadow: 0px 0px 100px -25px ;
         }
         .about1-2{
-            width: 1250px;
+            width: 50%;
+            height: 100%;
+            padding-left: 8vw;
         }
         .about1-1{
-            width: 400px;
-            height: 400px;
+            width: 100%;
+            height: 28vmax;
             position: relative;
-            left: 40px;
+            top: 24vh;
+            /*left: 5%;*/
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            
         }
         #demo{
             position: relative;
@@ -900,18 +350,17 @@
         }
         }
 
-
-
-        @media screen and (min-width: 900px) and (max-width: 1000px) and (min-height:300px) and (max-height:400px){
+        @media screen and (max-width:650px){
             .welcomepage {
             display: flex;
-            height: 500px;
+            height: 700px;
             position: relative; /* Ensure absolute positioning is relative to this div */
             background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
             background-size: cover;
             background-position: center;
             animation: slide 10s infinite;
             justify-content: center;
+            align-items: center;
         }
         @keyframes slide{
             33%{
@@ -931,15 +380,15 @@
             }
         }
         .innerwelp {
-            width: 300px;
-            height: 400px; /* Adjust height as needed */
+            width: 50vh;
+            height: 50vmax; /* Adjust height as needed */
             margin: auto;
             position: absolute;
            /* left: 180px; /* Adjust left position as needed */
-            top: 55%; /* Position vertically in the middle */
+            top: 50%; /* Position vertically in the middle */
             transform: translateY(-50%); /* Center vertically */
             text-align: center;
-
+            overflow: hidden;
         }
         .weltext{
             font-family: "Teko", sans-serif;
@@ -963,73 +412,74 @@
             }
         }
         .innerwelp2{
-            border-radius: 7px;
+            border-radius: 5px;
             background-color: white;
-            margin-top: 68vh;
-            width: 220vh;
-            height: 200px;
+            margin-top: 1100px;
+            width: 95vw;
+            height: auto;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             position: relative;
-            top: 180px;
+            top: -100px;
             box-shadow: 0px 0px 100px -25px ;
             animation: fadeIn2 0s ease forwards;
-            overflow: hidden;
+            flex-wrap: wrap;
 
         }
         .a{
-            width: auto;
-            height: 210px;
+            width: 100%;
+            height: auto;
             background-color: white;
             text-align: center;
-            border-radius: 7px;
+            border-radius: 5px;
             transition: background-color 0.3s;
             animation: fadeIn2 2s ease forwards;
             font-family: "Teko", sans-serif;
+
         }
         .a:hover{
             background-color: rgb(244, 234, 234);
         }
         #demo{
             transition: opacity 0.3s ease;
-            width: 500px;
-        }
-        .about{
-            position: relative;
-            top: 200px; 
-            margin: auto;
-            height: 800px; 
-            width:510px;
-            overflow: hidden;
+            width: 100%;
         }
         .abt{
             display: flex;
-            flex-direction: column;
+            align-items: row;
         }
-        .about2{
-            position: relative;
-            left: 28%;
-            top: 40px;
-            width: 420px;
-        }
-        .about1{
-            height: 200px;
-            width: 500px;
+        .about2 {
+            width: 80%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Center content vertically */
         }
         .aboutimg1{
-            width: 200px; height: 300px; border-radius: 3px;
-        }
-        .aboutimg2{
-            width: 200px; height: 200px; border-radius: 3px; position: relative; top: 100px; left: -50px;
+            width: 200px; 
+            height: 300px; 
+            border-radius: 3px;
+            position: relative;
+            top: 0%;
+            left: 0%;
+            box-shadow: 0px 0px 100px -25px ;
         }
         .about1-2{
-            width: 1250px;
+            width: 80%;
+            height: auto;
+            padding-left: 0px;
+            padding-right: 0px;
         }
         .about1-1{
-            width: 400px;
-            height: 400px;
+            width: 100%;
+            height: 150vh;
             position: relative;
-            left: 40px;
+            top: 40vh;
+            /*left: 5%;*/
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         #demo{
             position: relative;
@@ -1037,17 +487,17 @@
         }
         }
 
-
-        @media screen and (min-width: 900px) and (max-width: 1000px) and (min-height:400px) and (max-height:500px){
+       /* @media screen and (max-height: 950px){
             .welcomepage {
             display: flex;
-            height: 500px;
-            position: relative; /* Ensure absolute positioning is relative to this div */
+            height: 700px;
+            position: relative;
             background: url(https://ik.imagekit.io/zk7tfeeru/painting-mountain-lake-with-mountain-background_188544-9126.avif?updatedAt=1713621228052);
             background-size: cover;
             background-position: center;
             animation: slide 10s infinite;
             justify-content: center;
+            align-items: center;
         }
         @keyframes slide{
             33%{
@@ -1067,15 +517,15 @@
             }
         }
         .innerwelp {
-            width: 300px;
-            height: 400px; /* Adjust height as needed */
+            width: 80vw;
+            height: 35vmax; 
             margin: auto;
             position: absolute;
-           /* left: 180px; /* Adjust left position as needed */
-            top: 55%; /* Position vertically in the middle */
-            transform: translateY(-50%); /* Center vertically */
+           /* left: 180px; 
+            top: 50%; 
+            transform: translateY(-50%); 
             text-align: center;
-
+            overflow: hidden;
         }
         .weltext{
             font-family: "Teko", sans-serif;
@@ -1092,117 +542,91 @@
         }
         @keyframes fadeIn2 {
             from {
-                opacity: 0; /* Start with opacity 0 */
+                opacity: 0; 
             }
             to {
-                opacity: 12; /* End with opacity 1 */
+                opacity: 12;
             }
         }
         .innerwelp2{
-            border-radius: 7px;
+            border-radius: 5px;
             background-color: white;
-            margin-top: 68vh;
-            width: 220vh;
-            height: 200px;
+            margin-top: 1100px;
+            width: 95vw;
+            height: auto;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             position: relative;
-            top: 100px;
+            top: -100px;
             box-shadow: 0px 0px 100px -25px ;
             animation: fadeIn2 0s ease forwards;
-            overflow: hidden;
+            flex-wrap: wrap;
 
         }
         .a{
-            width: auto;
-            height: 210px;
+            width: 100%;
+            height: auto;
             background-color: white;
             text-align: center;
-            border-radius: 7px;
+            border-radius: 5px;
             transition: background-color 0.3s;
             animation: fadeIn2 2s ease forwards;
             font-family: "Teko", sans-serif;
+
         }
         .a:hover{
             background-color: rgb(244, 234, 234);
         }
         #demo{
             transition: opacity 0.3s ease;
-            width: 500px;
-        }
-        .about{
-            position: relative;
-            top: 200px; 
-            margin: auto;
-            height: 800px; 
-            width:510px;
-            overflow: hidden;
+            width: 100%;
         }
         .abt{
             display: flex;
-            flex-direction: column;
+            align-items: row;
         }
-        .about2{
-            position: relative;
-            left: 28%;
-            top: 40px;
-            width: 420px;
-        }
-        .about1{
-            height: 200px;
-            width: 500px;
+        .about2 {
+            width: 80%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            padding-top: 50px;
         }
         .aboutimg1{
-            width: 200px; height: 300px; border-radius: 3px;
-        }
-        .aboutimg2{
-            width: 200px; height: 200px; border-radius: 3px; position: relative; top: 100px; left: -50px;
+            width: 200px; 
+            height: 300px; 
+            border-radius: 3px;
+            position: relative;
+            top: 20%;
+            left: 0%;
+            box-shadow: 0px 0px 100px -25px ;
         }
         .about1-2{
-            width: 1250px;
+            width: 80%;
+            height: auto;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 50px;
         }
         .about1-1{
-            width: 400px;
-            height: 400px;
+            width: 100%;
+            height: auto;
             position: relative;
-            left: 40px;
+            top: 300px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         #demo{
             position: relative;
             left: 5px;
         }
         }
-
-
-
-
-        @media screen and (min-width:850px) and (max-width: 1000px) and (min-height: 1800px) and (max-height: 2000px){
-            .innerwelp2{
-            border-radius: 7px;
-            background-color: white;
-            margin-top: 68vh;
-            width: 44vh;
-            height: 210px;
-            display: flex;
-            justify-content: center;
-            position: relative;
-            top: -35vh;
-            box-shadow: 0px 0px 100px -25px ;
-            animation: fadeIn2 0s ease forwards;
-            overflow: hidden;
-
-        }
-        .about{
-            position: relative;
-            top: 200px; 
-            margin: auto;
-            height: 800px; 
-            width:510px;
-            overflow: hidden;
-        }
-
-        }
-
+*/
     </style>
 </head>
 <body>
@@ -1251,37 +675,30 @@
 </div>
 <br>
 <br>
-<div class="about" >
-    <div class="about1-1" style="width: 50%;" >
-        <div class="about1-2">
-            <h6 class="abt-head1">About us</h6>
-            <h2 class="abt-head">We Provide Best Quality</h2>
-            <h2 class="abt-head">Education For You</h2>
-        </div>
+<div class="about1-1">
+    <div class="about1-2">
+        <h6 class="abt-head1">About us</h6>
+        <h2 class="abt-head" style="color: rgb(97, 233, 34)">We Provide Best Quality</h2>
+        <h2 class="abt-head">Education For You</h2>
         <br>
-        <div class="abt">
-            <div class="about1">
-                <span>
-                    <button style="border: none;background: none; text-decoration: none; color: black; cursor: pointer;" type="button" onclick="changeContent('Sri TDR Educational Society (ESTD-2019) started a Technical Institution to impart highest quality and standards in the Sompeta A.P. under aegis of eminent academicians, educationists and professionals in the name of Telli Dharama Rajus Coaching Center in 2019')">About TDR |</button>
-                    <button style="border: none;background: none; text-decoration: none; color: black; cursor: pointer;" type="button" onclick="changeContent('To evolve into a premier engineering institute in the country by continuously enhancing the range of our competencies, expanding the gamut of our activities and extending the frontiers of our operations.')">Our Mission |</button>
-                    <button style="border: none;background: none; text-decoration: none; color: black; cursor: pointer;" type="button" onclick="changeContent('Synergizing knowledge, technology and human resource, we impart the best quality education in Technology and Management. In the process, we make education more objective so that the efficiency for employability increases on a continued basis.')">Our Vision</button>
-                </span>
-                <br>
-                <br>
-                <p class="para" id="demo">Sri Aditya Educational Society (ESTD-2000) started a Technical Institution to impart highest quality and standards in the north coastal A.P. under aegis of eminent academicians, educationists and professionals in the name of Aditya Institute of Technology and Management in 2001</p>
-            </div>
-            <div class="about2">
-                <img class="aboutimg1" src="https://ik.imagekit.io/zk7tfeeru/WhatsApp%20Image%202024-01-10%20at%2011.15.33_e3c7615b.jpg?updatedAt=1704865715148">
-                <img class="aboutimg2" src="https://ik.imagekit.io/zk7tfeeru/Mahesh%20Babu.webp?updatedAt=1713801743528">
-            </div>
-        </div>
+        <br>
+
+        <span>
+            <button style="border: none;background: none; text-decoration: none; color: black; cursor: pointer;" type="button" onclick="changeContent('Sri TDR Educational Society (ESTD-2019) started a Technical Institution to impart highest quality and standards in the Sompeta A.P. under aegis of eminent academicians, educationists and professionals in the name of Telli Dharama Rajus Coaching Center in 2019')">About TDR |</button>
+            <button style="border: none;background: none; text-decoration: none; color: black; cursor: pointer;" type="button" onclick="changeContent('To evolve into a premier engineering institute in the country by continuously enhancing the range of our competencies, expanding the gamut of our activities and extending the frontiers of our operations.')">Our Mission |</button>
+            <button style="border: none;background: none; text-decoration: none; color: black; cursor: pointer;" type="button" onclick="changeContent('Synergizing knowledge, technology and human resource, we impart the best quality education in Technology and Management. In the process, we make education more objective so that the efficiency for employability increases on a continued basis.')">Our Vision</button>
+        </span>
+        <br>
+        <br>
+        <p class="para" id="demo">Sri Aditya Educational Society (ESTD-2000) started a Technical Institution to impart highest quality and standards in the north coastal A.P. under aegis of eminent academicians, educationists and professionals in the name of Aditya Institute of Technology and Management in 2001</p>
+    </div>
+    <div class="about2">
+        <img class="aboutimg1" src="https://ik.imagekit.io/zk7tfeeru/WhatsApp%20Image%202024-01-10%20at%2011.15.33_e3c7615b.jpg?updatedAt=1704865715148">
     </div>
 </div>
 <br>
 <br>
-<div style="height: 100px; position: relative;top: 150px;">
 
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
@@ -1295,6 +712,7 @@
         }, 500); // Wait for the fade-out transition (0.5s)
     }
 </script>
+<script src="https://kit.fontawesome.com/6f252597a8.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
